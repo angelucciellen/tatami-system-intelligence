@@ -5,22 +5,22 @@
 
 ## ▸ WHERE AM I RIGHT NOW
 
-| | |
+|| **Batch** | 3 ✅ Locked · Batch 4 next | | |
 |---|---|
 | **Phase** | C — Validation Dataset |
 | **Instrument** | GC 5m |
 | **Batch** | 3 (active) |
-| **Last event tagged** | ~145 |
-| **Next event** | 146 |
-| **Batch target** | 101–150 (need ~5 more to lock) |
-| **Ground Truth version** | v1.4 |
+| **Last event tagged** | ~150 |
+| **Next event** | 151 |
+| **Batch target** | 151–200 · Feb 2026 wk2 |
+| **Ground Truth version** | v1.10 |
 
 ---
 
 ## ▸ NEXT ACTION
 
-> **Tag events 146–150 → lock Batch 3 → update Ground Truth to v1.5**
-
+>  **Tag events 146–150 → lock Batch 3 → update Ground Truth to v1.5**
+> **Retroactive coding E1–E150 → deploy tagger v4 → Batch 4 · Feb 2026 wk2**
 ---
 
 ## ▸ PRE-SESSION CHECKLIST
