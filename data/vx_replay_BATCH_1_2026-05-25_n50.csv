@@ -1,0 +1,51 @@
+event_id,datetime,session,rubric_version,ltf_state,ltf_dir,quality,compress,expansion,exhaust,htf1_state,htf1_dir,htf2_state,htf2_dir,sync,context,memory,tag,outcome_dir,outcome_atr,notes,screenshot
+1,2025-10-01T22:45,NY,v0.4,TRAVERSAL,UP,62,28,9,18,NEUTRAL,DOWN,NEUTRAL,UP,TRANSITION,Direction Conflict,11,LED,UP,3.9,,event_001_signal.jpg | event_001_outcome.jpg
+2,2025-10-01T04:45,London,v0.4,TRAVERSAL,UP,70,6,40,35,DRIFT,FLAT,NEUTRAL,UP,EQUIL_ALIGN,Mixed,11,LED,UP,4.7,I'M IGNORING THE FIRST CLEAN TRAVERSAL SIGNAL; IT'S NOT STRONG ENOUGH.,event_002_signal.jpg | event_002_outcome.jpg
+3,2025-10-02T04:30,London,v0.4,TRAVERSAL,UP,63,10,18,35,NEUTRAL,,NEUTRAL,UP,MIXED,Mixed,12,WRONG,SIDEWAYS,0.1,,event_003_signal.jpg | event_003_outcome.jpg
+4,2025-10-02T23:15,NY,v0.4,TRAVERSAL,DOWN,80,15,42,39,NEUTRAL,UP,NEUTRAL,UP,TRANSITION,Direction Conflict,12,LED,DOWN,7.1,,event_004_signal.jpg | event_004_outcome.jpg
+5,2025-10-03T10:20,Tokyo,v0.4,TRAVERSAL,DOWN,56,20,15,50,NEUTRAL,DOWN,NEUTRAL,UP,TRANSITION,Mixed,12,LED,,2.8,"After the signal bar, the price moves 1.6 ATR in the expected direction before reversing. ",event_005_signal.jpg | event_005_outcome.jpg
+6,2025-10-03T11:35,Tokyo,v0.4,TRAVERSAL,DOWN,64,14,34,37,NEUTRAL,DOWN,NEUTRAL,UP,TRANSITION,Mixed,12,WRONG,DOWN,1,,event_006_signal.jpg | event_006_outcome.jpg
+7,2025-10-03T14:14,Tokyo,v0.4,TRAVERSAL,UP,61,14,19,34,NEUTRAL,DOWN,NEUTRAL,UP,TRANSITION,Direction Conflict,12,WRONG,UP,1,,event_007_signal.jpg | event_007_outcome.jpg
+8,2025-10-03T20:20,London,v0.4,EXHAUSTION,DOWN,38,22,9,61,FAILED,,NEUTRAL,UP,CONFLICT,Mixed,7,LED,UP,2,"""GC NY. Exhaustion ▼ DOWN fired at 20:20 price 3,882, after prior Drift (~20:00) and Neutral (~20:10-20:15). Down move had largely played out before Exhaustion signaled — engine fired late relative to top (3,890). Within 6-bar window: MFE 5 pts up to 3,887 (1.8 ATR). MAE 4 pts down to 3,878 first (1.4 ATR adverse before favorable). Exhaust score 61 (below 70 docs threshold). Sync CONFLICT, Context Mixed — weak setup signal-side, but reversal materialized. LED by MFE rule with significant adverse excursion noted.""",event_008_signal.jpg | event_008_outcome.jpg
+9,2025-10-03T09:40,NY,v0.4,TRAVERSAL,UP,56,9,31,35,FAILED,FLAT,NEUTRAL,UP,TRANSITION,Mixed,9,LED,UP,2,,event_009_signal.jpg | event_009_outcome.jpg
+10,2025-10-06T10:55,Tokyo,v0.4,TRAVERSAL,UP,67,15,21,22,TRAVERSAL,UP,NEUTRAL,UP,MIXED,Macro Aligned,11,LED,UP,1.7,,event_010_signal.jpg | event_010_outcome.jpg
+11,2025-10-06T21:15,London,v0.4,FAILED,FLAT,28,36,8,48,TRAVERSAL,UP,TRAVERSAL,UP,MIXED,Mixed,5,LED,DOWN,3.5,"""Failed Traversal at top of move (~3,964 area). Up move had reached ~3,972-3,974 then failed. Down move materialized ~14 pts (3.5 ATR). Cascade continued with Exhaustion at 3,953 — see Event #Y.""",event_011_signal.jpg | event_011_outcome.jpg
+12,2025-10-06T21:35,NY,v0.4,EXHAUSTION,DOWN,44,31,14,64,TRAVERSAL,UP,TRAVERSAL,UP,TRANSITION,Pullback in Trend,6,LED,UP,2,"""Follows Failed Traversal event at ~21:00. Multi-state cascade: Failed Traversal → continuation down → Exhaustion at memory zone → bounce. Related to Event #X (Failed Traversal). MFE 7 pts up (1.75 ATR). MAE 3 pts down (0.75 ATR) before bounce. Memory zone at 3,950 respected cleanly.""",event_012_signal.jpg | event_012_outcome.jpg
+13,2025-10-07T18:05,London,v0.4,TRAVERSAL,UP,56,15,22,27,NEUTRAL,UP,TRAVERSAL,UP,MIXED,Mixed,7,LED,UP,2.5,,event_013_signal.jpg | event_013_outcome.jpg
+14,2025-10-07T21:25,London,v0.4,FAILED,UP,30,30,9,29,NEUTRAL,FLAT,TRAVERSAL,UP,TRANSITION,Mixed,8,LED,UP,4,,event_014_signal.jpg | event_014_outcome.jpg
+15,2025-10-07T10:05,NY,v0.4,TRAVERSAL,UP,58,8,43,28,NEUTRAL,UP,TRAVERSAL,UP,MIXED,Mixed,8,WRONG,DOWN,3,"The signal fired on the right of the day, Ny session open.",event_015_signal.jpg | event_015_outcome.jpg
+16,2025-10-08T12:10,NY,v0.4,TRAVERSAL,UP,66,8,16,8,NEUTRAL,UP,TRAVERSAL,UP,MIXED,Mixed,8,WRONG,UP,3,,event_016_signal.jpg | event_016_outcome.jpg
+17,2025-10-08T13:15,NY,v0.4,TRAVERSAL,DOWN,62,22,15,31,NEUTRAL,FLAT,TRAVERSAL,UP,CONFLICT,Mixed,8,LED,UP,2,,event_017_signal.jpg | event_017_outcome.jpg
+18,2025-10-08T23:10,Tokyo,v0.4,TRAVERSAL,UP,67,8,32,29,NEUTRAL,FLAT,TRAVERSAL,UP,MIXED,Mixed,8,LED,UP,1,,event_018_signal.jpg | event_018_outcome.jpg
+19,2025-10-08T13:50,Tokyo,v0.4,TRAVERSAL,UP,78,14,29,5,TRAVERSAL,UP,TRAVERSAL,UP,STRONG_SYNC,Macro Aligned,7,LED,UP,2.5,,event_019_signal.jpg | event_019_outcome.jpg
+20,2025-10-08T18:45,London,v0.4,TRAVERSAL,UP,56,22,25,32,TRAVERSAL,UP,TRAVERSAL,UP,STRONG_SYNC,Macro Aligned,7,CONFIRMED,SIDEWAYS,1,,event_020_signal.jpg | event_020_outcome.jpg
+21,2025-10-08T10:05,NY,v0.4,FAILED,FLAT,35,6,11,35,TRAVERSAL,UP,TRAVERSAL,UP,MIXED,Mixed,6,LED,DOWN,4.8,,event_021_signal.jpg | event_021_outcome.jpg
+22,2025-10-08T10:35,NY,v0.4,FAILED,DOWN,31,22,14,48,TRAVERSAL,UP,TRAVERSAL,UP,TRANSITION,Direction Conflict,6,LED,UP,2.0,,event_022_signal.jpg | event_022_outcome.jpg
+23,2025-10-09T10:05,Tokyo,v0.4,DRIFT,FLAT,43,15,14,23,NEUTRAL,UP,TRAVERSAL,UP,MIXED,Mixed,8,LED,UP,4.0,,event_023_signal.jpg | event_023_outcome.jpg
+24,2025-10-09T10:00,NY,v0.4,EXHAUSTION,UP,48,19,26,61,NEUTRAL,UP,NEUTRAL,UP,MIXED,Mixed,9,LED,DOWN,2.0,,event_024_signal.jpg | event_024_outcome.jpg
+25,2025-10-09T10:45,NY,v0.4,EXHAUSTION,FLAT,51,8,27,63,NEUTRAL,FLAT,NEUTRAL,UP,TRANSITION,Mixed,11,LED,DOWN,2.5,,event_025_signal.jpg | event_025_outcome.jpg
+26,2025-10-10T13:30,NY,v0.4,TRAVERSAL,DOWN,57,10,31,7,NEUTRAL,DOWN,NEUTRAL,UP,TRANSITION,Mixed,11,LED,DOWN,4.5,,event_026_signal.jpg | event_026_outcome.jpg
+27,2025-10-10T10:30,Tokyo,v0.4,TRAVERSAL,DOWN,59,13,8,40,NEUTRAL,DOWN,NEUTRAL,UP,TRANSITION,Mixed,10,LED,DOWN,1.4,,event_027_signal.jpg | event_027_outcome.jpg
+28,2025-10-10T12:00,Tokyo,v0.4,TRAVERSAL,DOWN,59,16,29,23,NEUTRAL,DOWN,DRIFT,FLAT,MIXED,Mixed,11,LED,DOWN,2.5,,event_028_signal.jpg | event_028_outcome.jpg
+29,2025-10-10T17:00,London,v0.4,TRAVERSAL,UP,69,18,14,29,NEUTRAL,DOWN,DRIFT,FLAT,CONFLICT,Direction Conflict,11,LED,UP,2.0,,event_029_signal.jpg | event_029_outcome.jpg
+30,2025-10-10T10:30,NY,v0.4,EXHAUSTION,FLAT,38,33,11,60,FAILED,DOWN,DRIFT,FLAT,TRANSITION,Mixed,5,LED,DOWN,3.9,,event_030_signal.jpg | event_030_outcome.jpg
+31,2025-10-10T11:00,NY,v0.4,EXHAUSTION,DOWN,54,30,28,63,NEUTRAL,DOWN,DRIFT,FLAT,MIXED,Mixed,6,LED,UP,1,,event_031_signal.jpg | event_031_outcome.jpg
+32,2025-10-10T11:40,NY,v0.4,DRIFT,FLAT,41,21,13,28,FAILED,DOWN,DRIFT,FLAT,TRANSITION,Mixed,8,LED,UP,3.7,,event_032_signal.jpg | event_032_outcome.jpg
+33,2025-10-13T14:00,Tokyo,v0.4,TRAVERSAL,UP,55,35,31,23,EXHAUSTION,UP,DRIFT,FLAT,CONFLICT,Counter-Trend,11,LED,UP,5,,event_033_signal.jpg | event_033_outcome.jpg
+34,2025-10-13T10:15,NY,v0.4,EXHAUSTION,UP,28,25,39,63,TRAVERSAL,UP,TRAVERSAL,UP,TRANSITION,Pullback in Trend,11,LED,DOWN,1,,event_034_signal.jpg | event_034_outcome.jpg
+35,2025-10-13T10:45,NY,v0.4,TRAVERSAL,UP,65,12,23,30,TRAVERSAL,UP,TRAVERSAL,UP,STRONG_SYNC,Macro Aligned,10,LED,UP,1,,event_035_signal.jpg | event_035_outcome.jpg
+36,2026-10-14T10:00,Tokyo,v0.4,TRAVERSAL,UP,57,12,30,13,TRAVERSAL,UP,TRAVERSAL,UP,STRONG_SYNC,Macro Aligned,5,LED,UP,4,,event_036_signal.jpg | event_036_outcome.jpg
+37,2025-10-14T10:30,Tokyo,v0.4,EXPANSION,UP,47,20,55,39,TRAVERSAL,UP,TRAVERSAL,UP,STRONG_SYNC,Mixed,6,WRONG,DOWN,2.5,,event_037_signal.jpg | event_037_outcome.jpg
+38,2025-10-14T05:10,Tokyo,v0.4,TRAVERSAL,UP,71,18,18,20,NEUTRAL,UP,TRAVERSAL,UP,MIXED,Mixed,9,WRONG,SIDEWAYS,0.5,,event_038_signal.jpg | event_038_outcome.jpg
+39,2026-10-14T18:35,London,v0.4,FAILED,UP,32,25,33,15,NEUTRAL,UP,TRAVERSAL,UP,TRANSITION,Mixed,8,LED,DOWN,2,,event_039_signal.jpg | event_039_outcome.jpg
+40,2025-10-14T21:20,London,v0.4,TRAVERSAL,DOWN,61,36,8,29,NEUTRAL,UP,TRAVERSAL,UP,TRANSITION,Direction Conflict,8,LED,DOWN,3,,event_040_signal.jpg | event_040_outcome.jpg
+41,2025-10-14T22:10,NY,v0.4,TRAVERSAL,DOWN,61,14,11,17,NEUTRAL,UP,TRAVERSAL,UP,TRANSITION,Direction Conflict,7,LED,UP,2,at the Bar signal : STATE Clean Traversal however the arrow was to the down side,event_041_signal.jpg | event_041_outcome.jpg
+42,2025-10-15T16:35,London,v0.4,TRAVERSAL,UP,66,21,24,29,TRAVERSAL,UP,TRAVERSAL,UP,STRONG_SYNC,Macro Aligned,10,LED,UP,2.5,,event_042_signal.jpg | event_042_outcome.jpg
+43,2025-10-15T17:50,London,v0.4,FAILED,UP,32,23,29,33,TRAVERSAL,UP,TRAVERSAL,UP,MIXED,Mixed,10,LED,DOWN,13,,event_043_signal.jpg | event_043_outcome.jpg
+44,2025-10-15T19:15,London,v0.4,FAILED,DOWN,74,16,13,19,NEUTRAL,UP,TRAVERSAL,UP,TRANSITION,Direction Conflict,8,LED,DOWN,3,,event_044_signal.jpg | event_044_outcome.jpg
+45,2025-10-16T09:25,Tokyo,v0.4,EXHAUSTION,UP,60,23,8,69,NEUTRAL,UP,TRAVERSAL,UP,TRANSITION,Mixed,7,LED,DOWN,3,,event_045_signal.jpg | event_045_outcome.jpg
+46,2025-10-16T10:50,Tokyo,v0.4,TRAVERSAL,UP,58,13,30,31,NEUTRAL,UP,TRAVERSAL,UP,MIXED,Mixed,8,LED,UP,1,,event_046_signal.jpg | event_046_outcome.jpg
+47,2025-10-16T14:10,Tokyo,v0.4,TRAVERSAL,DOWN,62,24,32,57,TRAVERSAL,UP,TRAVERSAL,UP,TRANSITION,Direction Conflict,8,LED,DOWN,4,,event_047_signal.jpg | event_047_outcome.jpg
+48,2025-10-16T14:15,Tokyo,v0.4,EXHAUSTION,DOWN,57,24,33,71,TRAVERSAL,UP,TRAVERSAL,UP,TRANSITION,Pullback in Trend,9,WRONG,DOWN,4,,event_048_signal.jpg | event_048_outcome.jpg
+49,2025-10-16T14:35,Tokyo,v0.4,EXHAUSTION,DOWN,59,34,38,72,TRAVERSAL,UP,TRAVERSAL,UP,TRANSITION,Pullback in Trend,9,LED,UP,2,,event_049_signal.jpg | event_049_outcome.jpg
+50,2025-10-16T21:40,NY,v0.4,EXHAUSTION,FLAT,32,29,14,60,NEUTRAL,UP,TRAVERSAL,UP,TRANSITION,Mixed,12,LED,UP,1.5,"Before New York open, long wick,probably a liquidity grab, bar exaustion  initiating the move up.",event_050_signal.jpg | event_050_outcome.jpg
