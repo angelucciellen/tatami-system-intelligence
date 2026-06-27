@@ -1,3 +1,0 @@
-# Institutional Behavior
-
-Coming soon.
