@@ -3,7 +3,7 @@
 ## Version 1.0
 
 *"Every platform evolves one layer at a time."*
-
+ 
 ---
 
 # Vision
